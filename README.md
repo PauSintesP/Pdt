@@ -11,4 +11,6 @@
 ## Dashboard
 ![image](https://github.com/user-attachments/assets/fd45bd9e-5f94-42b4-a86b-3cc517011a0e)
 
+## Teacher View
+![image](https://github.com/user-attachments/assets/ac1040a5-7bb1-419a-85f5-93ab523b80f8)
 
