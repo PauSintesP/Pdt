@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80FFFFFF" /> <!-- Blanco con 50% de opacidad (#80 es el alfa) -->
+            <corners android:radius="8dp" /> <!-- Bordes redondeados -->
+            <stroke android:width="2dp" android:color="#FFFFFFFF" /> <!-- Borde blanco sólido -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"> <!-- Fondo personalizado -->
+
+    <!-- Botón para ir hacia atrás -->
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botón atrás"
+        android:src="@drawable/arrow" />
+
+    <!-- Contenedor del título con fondo blanco transparente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#80FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/historial" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historial de Asistencias"
+            android:textColor="@android:color/black"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:paddingStart="8dp" />
+    </LinearLayout>
+
+    <!-- Flechas para cambiar de día -->
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:background="#80FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnDiaAnterior"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow"
+            android:contentDescription="Día anterior" />
+
+        <TextView
+
+            android:id="@+id/tvDiaActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunes / M02"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnDiaSiguiente"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow2"
+            android:contentDescription="Día siguiente" />
+    </LinearLayout>
+
+    <!-- Contenedor ScrollView para la tabla -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tablaAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#80FFFFFF"
+            android:padding="8dp"
+            android:stretchColumns="*">
+
+            <!-- Encabezado de la tabla -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Alumne"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Fecha"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Presencia"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Filas de datos -->
+            <TableRow>
+
+            </TableRow>
+            <!-- Agrega más filas según sea necesario -->
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
